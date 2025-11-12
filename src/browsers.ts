@@ -415,24 +415,4 @@ async function closeBrowser ( ): Promise<void> {
   }
 }
 
-// Listen for process exit and close browsers
-process.on ( "exit", async ( ) => {
-  await closeBrowser ( )
-} )
-
-// Additional safety to ensure resources are freed if there"s an unexpected shutdown
-process.on ( "SIGINT", async ( ) => {
-  console.log ( "SIGINT received. Closing browsers..." )
-  await closeBrowser ( )
-} )
-
-process.on ( "SIGTERM", async ( ) => {
-  console.log ( "SIGTERM received. Closing browsers..." )
-  await closeBrowser ( )
-} )
-
-process.on ( "uncaughtException", async ( ) => {
-  await closeBrowser ( )
-} )
-
 export { launchBrowser, closeBrowser }
