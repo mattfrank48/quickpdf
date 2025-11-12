@@ -416,23 +416,28 @@ async function closeBrowser ( ): Promise<void> {
 }
 
 // Listen for process exit and close browsers
-process.on ( "exit", async ( ) => {
+process.on ( "exit", async ( code ) => {
   await closeBrowser ( )
+  process.exit ( code )
 } )
 
 // Additional safety to ensure resources are freed if there"s an unexpected shutdown
-process.on ( "SIGINT", async ( ) => {
-  console.log ( "SIGINT received. Closing browsers..." )
-  await closeBrowser ( )
+process.on ( "SIGINT", async ( e ) => {
+  console.error ( "quick-pdf received SIGINT, closing browsers..." )
+  console.error ( e )
+  process.exit ( 1 )
 } )
 
-process.on ( "SIGTERM", async ( ) => {
-  console.log ( "SIGTERM received. Closing browsers..." )
-  await closeBrowser ( )
+process.on ( "SIGTERM", async ( e ) => {
+  console.error ( "quick-pdf received SIGTERM, closing browsers..." )
+  console.error ( e )
+  process.exit ( 1 )
 } )
 
-process.on ( "uncaughtException", async ( ) => {
-  await closeBrowser ( )
+process.on ( "uncaughtException", async ( e ) => {
+  console.error ( "quick-pdf encountered an uncaught exception, closing browsers..." )
+  console.error ( e )
+  process.exit ( 1 )
 } )
 
 export { launchBrowser, closeBrowser }
