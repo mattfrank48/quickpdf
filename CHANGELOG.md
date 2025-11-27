@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+# 1.8.6 (2025-11-27)
+# 1.8.5 (2025-11-27)
+- Minor Dependency Upgrades
+
 # 1.8.4 (2025-11-12)
 # 1.8.3 (2025-11-12)
 - Fix process.exit error trapping
