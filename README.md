@@ -16,6 +16,8 @@ This project provides a set of utilities for converting various file formats wit
 - **Node.js**: This project is built with Node.js and uses ES modules. NodeJS > v20 required.
 - Firefox or Chrome (Module Dependant) either remotely or on your machine.
 
+NOTE: Please check Puppeteer's currently supported browser versions before using this project -> Puppeteer is normally kept as up to date as possible but it is worth checking the package.json before installing.
+
 # Operations Available in the Package
 
 ## 1. `html2pdf`
