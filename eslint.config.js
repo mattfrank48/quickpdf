@@ -26,6 +26,7 @@ export default tseslint.config (
       },
     },
     rules: {
+      "@typescript-eslint/no-deprecated": "error",
       "@typescript-eslint/no-explicit-any": "off",
       "@typescript-eslint/naming-convention": [
         "error",
