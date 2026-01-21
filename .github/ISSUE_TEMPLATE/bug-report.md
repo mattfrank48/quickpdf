@@ -26,7 +26,7 @@ If applicable, add screenshots to help explain your problem.
 **Software:**
  - OS: [e.g. iOS]
  - Browser [e.g. chrome, safari]
- - Node Version [e.g. 22]
+ - Node Version [e.g. 24]
 
 **Additional context**
 Add any other context about the problem here.
