@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+# 1.9.0 (2026-01-21)
+- Dependency Upgrades
+- Upgrade to Node 24.13.0
+
 # 1.8.6 (2025-11-27)
 # 1.8.5 (2025-11-27)
 - Minor Dependency Upgrades

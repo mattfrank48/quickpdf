@@ -1,6 +1,6 @@
 {
   "name": "@iqx-limited/quick-pdf",
-  "version": "1.8.6",
+  "version": "1.9.0",
   "author": "IQX",
   "description": "Converting PDFs to images (📃 to 📸)",
   "type": "module",
@@ -45,12 +45,12 @@
   },
   "engineStrict": true,
   "dependencies": {
-    "file-type": "^21.1.1",
-    "html-validate": "^10.5.0",
+    "file-type": "^21.3.0",
+    "html-validate": "^10.6.0",
     "image-size": "^2.0.2",
     "path2d-polyfill": "^3.2.1",
     "pdfkit": "^0.17.2",
-    "puppeteer": "^24.33.0",
+    "puppeteer": "^24.35.0",
     "rollup-plugin-node-externals": "^8.1.2",
     "semver": "^7.7.3"
   },
@@ -59,16 +59,16 @@
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-typescript": "^12.3.0",
-    "@stylistic/eslint-plugin": "^5.6.1",
-    "@types/node": "^25.0.2",
+    "@stylistic/eslint-plugin": "^5.7.0",
+    "@types/node": "^25.0.9",
     "@types/pdfkit": "^0.17.4",
     "@types/semver": "^7.7.1",
     "eslint": "^9.39.2",
-    "rollup": "^4.53.3",
+    "rollup": "^4.55.3",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.49.0"
+    "typescript-eslint": "^8.53.1"
   },
   "volta": {
-    "node": "24.12.0"
+    "node": "24.13.0"
   }
 }
