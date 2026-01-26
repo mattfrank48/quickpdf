@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+# 1.9.1 (2026-01-26)
+- Fix Typescript compile issue
+
 # 1.9.0 (2026-01-21)
 - Dependency Upgrades
 - Upgrade to Node 24.13.0
